@@ -1,48 +1,52 @@
-# starter-template
+# Common .NET Utilities
 
-Welcome to the Project Starter Template! This repository provides a foundational setup for starting new projects with essential features like automated release workflows, code quality analysis with SonarCloud, dependency management with Dependabot, and a clear licensing structure.
+Welcome to the **Common .NET Utilities** repository! This project houses a collection of reusable .NET components, extensions, and utilities designed to simplify and accelerate .NET development. Whether you're working on a small project or a large-scale application, these utilities can help you avoid reinventing the wheel and adhere to best practices.
 
 ## Table of Contents
 
+- [Introduction](#introduction)
 - [Features](#features)
-- [Release Version Workflow](#release-version-workflow)
-- [SonarCloud](#sonarcloud)
-- [Dependabot](#dependabot)
+- [Contributing](#contributing)
 - [License](#license)
+- [Contact](#contact)
+
+## Introduction
+
+The **Common .NET Utilities** project aims to provide developers with a set of well-tested and documented tools that can be easily integrated into any .NET application. The utilities cover a wide range of functionalities, from common extensions and helpers to more complex patterns and practices.
 
 ## Features
 
-- **Automated Release Workflow**: Manage your releases effortlessly with GitHub Actions.
-- **SonarCloud Integration**: Ensure code quality and maintainability with SonarCloud.
-- **Dependabot**: Keep your dependencies up to date automatically.
-- **Standard Licensing**: A default GPL-3.0 license included.
+- **String Utilities**: Various extensions and helpers for string manipulation.
+- **Date and Time Utilities**: Simplified handling and manipulation of dates and times.
+- **Collection Utilities**: Extensions for common collection operations.
+- **Configuration Helpers**: Simplified access to configuration settings.
+- **Logging Extensions**: Tools to extend and enhance logging capabilities in .NET applications.
+- **And more!**: Continuously growing set of utilities to meet the needs of .NET developers.
 
-## Release Version Workflow
+## Installation
 
-This repository uses GitHub Actions to automate the release process. The workflow must be manually triggered using the `workflow_dispatch` event. The workflow includes the following steps:
+To use the utilities in your project, you can either clone this repository or install the package via NuGet:
 
-1. **Check out the code**.
-2. **Set up Node.js**.
-3. **Create a release**: Automatically tag and create a release based on the commit messages.
+```bash
+dotnet nuget add source https://nuget.pkg.github.com/utconnect/index.json -n utconnect
+```
 
-To customize the release workflow, modify the `.github/workflows/release.yml` file.
+## Contributing
 
-### How to Trigger a Release Manually
+We welcome contributions from the community! If you'd like to contribute:
 
-1. Go to the **Actions** tab in your GitHub repository.
-2. Select the **Release** Workflow.
-3. Click on the **Run workflow** button and confirm.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
-## SonarCloud
-
-SonarCloud is used for static code analysis to ensure code quality. The configuration file `.sonarcloud.properties` is generated automatically when run **Release** workflow.
-
-## Dependabot
-
-Dependabot helps you keep your dependencies up to date. It is configured to check for updates to your dependencies and open pull requests automatically. The configuration file is located at `.github/dependabot.yml`.
-
-You can customize the update frequency, target dependencies, and more by modifying this file. [Dependabot options](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file)
+Please ensure that your contributions adhere to the project's coding standards and include appropriate tests.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-3 License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+If you have any questions, suggestions, or feedback, feel free to reach out to the project maintainers or open an issue on GitHub.
