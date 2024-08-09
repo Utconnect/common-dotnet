@@ -24,8 +24,32 @@ jobs:
           git config --global user.name "Release workflow"
 
       - name: Release new version
-        run: npx --yes commit-and-tag-version -a
+        shell: bash {0}
+        run: >
+          npx --yes commit-and-tag-version -a
+          --packageFiles
+          ./src/Common/Common.csproj
+          ./src/Common.Configurations/Common.Configurations.csproj
+          ./src/Common.Exceptions/Common.Exceptions.csproj
+          ./src/Common.Extensions/Common.Extensions.csproj
+          ./src/Common.Helpers/Common.Helpers.csproj
+          ./src/Common.Http/Common.Http.csproj
+          ./src/Common.Identity/Common.Identity.csproj
+          ./src/Common.Infrastructure.Db/Common.Infrastructure.Db.csproj
+          ./src/Common.Logging/Common.Logging.csproj
+          ./src/Common.MediatR/Common.MediatR.csproj
+          --bumpFiles
+          ./src/Common/Common.csproj
+          ./src/Common.Configurations/Common.Configurations.csproj
+          ./src/Common.Exceptions/Common.Exceptions.csproj
+          ./src/Common.Extensions/Common.Extensions.csproj
+          ./src/Common.Helpers/Common.Helpers.csproj
+          ./src/Common.Http/Common.Http.csproj
+          ./src/Common.Identity/Common.Identity.csproj
+          ./src/Common.Infrastructure.Db/Common.Infrastructure.Db.csproj
+          ./src/Common.Logging/Common.Logging.csproj
+          ./src/Common.MediatR/Common.MediatR.csproj
 
       - name: Push new version
         run: |
-          git push --follow-tags origin master
+          git push --follow-tags origin main
