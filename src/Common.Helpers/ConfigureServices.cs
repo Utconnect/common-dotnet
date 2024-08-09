@@ -1,8 +1,9 @@
-﻿using Common.Diacritics.Implementations;
+﻿using Common.Helpers.Implementations;
+using Common.Helpers.Models;
 using Diacritics;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Common.Diacritics;
+namespace Common.Helpers;
 
 public static class ConfigureServices
 {

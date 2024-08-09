@@ -1,4 +1,4 @@
-﻿namespace Common.Diacritics.Abstractions;
+﻿namespace Common.Helpers.Abstractions;
 
 public interface IStringHelper
 {

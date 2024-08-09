@@ -1,6 +1,6 @@
 ﻿using Diacritics;
 
-namespace Common.Diacritics.Implementations;
+namespace Common.Helpers.Implementations;
 
 internal class StringHelper(IDiacriticsMapper diacriticsMapper)
 {
