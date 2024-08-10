@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
 
-namespace Common.Logging;
+namespace Utconnect.Common.Logging;
 
 public static class LoggerExtensions
 {

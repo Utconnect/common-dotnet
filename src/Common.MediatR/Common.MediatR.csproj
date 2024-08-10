@@ -9,6 +9,7 @@
         <Authors>An Nguyen</Authors>
         <Company>Utconnect</Company>
         <RepositoryUrl>https://github.com/utconnect/common-dotnet</RepositoryUrl>
+        <RootNamespace>Utconnect.Common.MediatR</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

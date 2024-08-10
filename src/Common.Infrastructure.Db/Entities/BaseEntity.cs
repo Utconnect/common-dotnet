@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Common.Infrastructure.Db.Entities;
+namespace Utconnect.Common.Infrastructure.Db.Entities;
 
 public abstract class BaseEntity : BaseEntity<Guid>;
 

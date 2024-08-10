@@ -1,12 +1,11 @@
-using Common.Identity.Services;
-using Common.Identity.Services.Abstractions;
-using Common.Infrastructure.Db.Entities;
-using Common.Services.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using Utconnect.Common.Identity.Services.Abstractions;
+using Utconnect.Common.Infrastructure.Db.Entities;
+using Utconnect.Common.Services.Abstractions;
 
-namespace Common.Infrastructure.Db.Interceptors;
+namespace Utconnect.Common.Infrastructure.Db.Interceptors;
 
 public class AuditableEntitySaveChangesInterceptor(IIdentityService identityService, IDateTime dateTime)
     : SaveChangesInterceptor

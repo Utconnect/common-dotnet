@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace Common.Models.Errors;
+namespace Utconnect.Common.Models.Errors;
 
 public class NotFoundError(string message) : Error(HttpStatusCode.NotFound, message);
 

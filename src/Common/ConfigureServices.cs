@@ -1,8 +1,8 @@
-﻿using Common.Services.Abstractions;
-using Common.Services.Implementations;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Utconnect.Common.Services.Abstractions;
+using Utconnect.Common.Services.Implementations;
 
-namespace Common;
+namespace Utconnect.Common;
 
 public static class ConfigureServices
 {

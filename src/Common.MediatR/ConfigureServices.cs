@@ -2,7 +2,7 @@
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Common.MediatR;
+namespace Utconnect.Common.MediatR;
 
 public static class ConfigureServices
 {

@@ -1,6 +1,6 @@
-using Common.Identity.Models;
+using Utconnect.Common.Identity.Models;
 
-namespace Common.Identity.Services.Abstractions;
+namespace Utconnect.Common.Identity.Services.Abstractions;
 
 public interface IIdentityService
 {

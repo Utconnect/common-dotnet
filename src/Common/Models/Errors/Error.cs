@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace Common.Models.Errors;
+namespace Utconnect.Common.Models.Errors;
 
 public abstract class Error
 {

@@ -1,9 +1,9 @@
-﻿using Common.Helpers.Implementations;
-using Common.Helpers.Models;
-using Diacritics;
+﻿using Diacritics;
 using Microsoft.Extensions.DependencyInjection;
+using Utconnect.Common.Helpers.Implementations;
+using Utconnect.Common.Helpers.Models;
 
-namespace Common.Helpers;
+namespace Utconnect.Common.Helpers;
 
 public static class ConfigureServices
 {

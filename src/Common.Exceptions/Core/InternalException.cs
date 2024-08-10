@@ -1,7 +1,7 @@
 using System.Net;
-using Common.Models.Errors;
+using Utconnect.Common.Models.Errors;
 
-namespace Common.Exceptions.Core;
+namespace Utconnect.Common.Exceptions.Core;
 
 public abstract class InternalServerErrorException(string? message, Exception? innerException = null)
     : InnerException(message, innerException)

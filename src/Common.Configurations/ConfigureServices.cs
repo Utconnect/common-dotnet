@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Common.Configurations;
+namespace Utconnect.Common.Configurations;
 
 public static class ConfigureServices
 {

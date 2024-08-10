@@ -1,4 +1,4 @@
-namespace Common.Exceptions.Core;
+namespace Utconnect.Common.Exceptions.Core;
 
 public abstract class InnerException(string? message, Exception? innerException = null)
     : Exception(message, innerException)

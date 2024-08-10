@@ -1,4 +1,4 @@
-﻿namespace Common.Helpers.Abstractions;
+﻿namespace Utconnect.Common.Helpers.Abstractions;
 
 public interface IStringHelper
 {

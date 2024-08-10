@@ -1,4 +1,4 @@
-namespace Common.Infrastructure.Db.Entities;
+namespace Utconnect.Common.Infrastructure.Db.Entities;
 
 public abstract class BaseAuditableEntity : BaseAuditableEntity<Guid>;
 

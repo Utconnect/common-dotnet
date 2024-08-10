@@ -1,8 +1,8 @@
-﻿using Common.Models;
-using FluentValidation;
+﻿using FluentValidation;
 using FluentValidation.Results;
+using Utconnect.Common.Models;
 
-namespace Common.MediatR.Abstract;
+namespace Utconnect.Common.MediatR.Abstractions;
 
 public abstract class Validatable
 {

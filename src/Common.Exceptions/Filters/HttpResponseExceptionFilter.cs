@@ -1,12 +1,12 @@
 using System.Net;
-using Common.Exceptions.Core;
-using Common.Models;
-using Common.Models.Errors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Hosting;
+using Utconnect.Common.Exceptions.Core;
+using Utconnect.Common.Models;
+using Utconnect.Common.Models.Errors;
 
-namespace Common.Exceptions.Filters;
+namespace Utconnect.Common.Exceptions.Filters;
 
 public class HttpResponseExceptionFilter(IHostEnvironment hostEnvironment) : IExceptionFilter
 {

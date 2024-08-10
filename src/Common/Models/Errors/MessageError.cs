@@ -1,3 +1,3 @@
-namespace Common.Models.Errors;
+namespace Utconnect.Common.Models.Errors;
 
 public class MessageError(string message) : Error(message);

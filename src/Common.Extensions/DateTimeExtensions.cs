@@ -1,4 +1,4 @@
-﻿namespace Common.Extensions;
+﻿namespace Utconnect.Common.Extensions;
 
 public static class DateTimeExtensions
 {

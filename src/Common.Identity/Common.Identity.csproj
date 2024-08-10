@@ -9,12 +9,13 @@
         <Authors>An Nguyen</Authors>
         <Company>Utconnect</Company>
         <RepositoryUrl>https://github.com/utconnect/common-dotnet</RepositoryUrl>
+        <RootNamespace>Utconnect.Common.Identity</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
-      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 

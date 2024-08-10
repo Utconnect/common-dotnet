@@ -1,4 +1,4 @@
-﻿namespace Common.Configurations.Models;
+﻿namespace Utconnect.Common.Configurations.Models;
 
 public interface ISiteConfig
 {

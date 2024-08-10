@@ -1,7 +1,7 @@
 ﻿using System.Collections.Specialized;
 using System.Web;
 
-namespace Common.Http.Uri;
+namespace Utconnect.Common.Http.Uri;
 
 public static class UriExtensions
 {

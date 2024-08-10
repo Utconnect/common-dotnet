@@ -1,6 +1,6 @@
 ﻿using Diacritics;
 using Diacritics.AccentMappings;
 
-namespace Common.Helpers.Models;
+namespace Utconnect.Common.Helpers.Models;
 
-public class CommonDiacriticsMapper() : DiacriticsMapper(new VietnameseAccentsMapping());
+internal class CommonDiacriticsMapper() : DiacriticsMapper(new VietnameseAccentsMapping());

@@ -1,6 +1,6 @@
-using Common.Services.Abstractions;
+using Utconnect.Common.Services.Abstractions;
 
-namespace Common.Services.Implementations;
+namespace Utconnect.Common.Services.Implementations;
 
 internal class DateTimeService : IDateTime
 {

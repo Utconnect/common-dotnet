@@ -1,9 +1,8 @@
-﻿using Common.Identity.Services;
-using Common.Identity.Services.Abstractions;
-using Common.Identity.Services.Implementations;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Utconnect.Common.Identity.Services.Abstractions;
+using Utconnect.Common.Identity.Services.Implementations;
 
-namespace Common.Identity;
+namespace Utconnect.Common.Identity;
 
 public static class ConfigureServices
 {

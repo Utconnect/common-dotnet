@@ -1,14 +1,14 @@
 using System.Security.Claims;
-using Common.Extensions;
-using Common.Identity.Exceptions;
-using Common.Identity.Models;
-using Common.Identity.Services.Abstractions;
-using Common.Logging;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Utconnect.Common.Extensions;
+using Utconnect.Common.Identity.Exceptions;
+using Utconnect.Common.Identity.Models;
+using Utconnect.Common.Identity.Services.Abstractions;
+using Utconnect.Common.Logging;
 
-namespace Common.Identity.Services.Implementations;
+namespace Utconnect.Common.Identity.Services.Implementations;
 
 internal class IdentityService(IHttpContextAccessor httpContextAccessor, ILogger<IdentityService> logger)
     : IIdentityService

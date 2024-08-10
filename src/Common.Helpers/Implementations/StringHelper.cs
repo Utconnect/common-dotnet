@@ -1,8 +1,9 @@
 ﻿using Diacritics;
+using Utconnect.Common.Helpers.Abstractions;
 
-namespace Common.Helpers.Implementations;
+namespace Utconnect.Common.Helpers.Implementations;
 
-internal class StringHelper(IDiacriticsMapper diacriticsMapper)
+internal class StringHelper(IDiacriticsMapper diacriticsMapper) : IStringHelper
 {
     public string RemoveDiacritics(string str)
     {

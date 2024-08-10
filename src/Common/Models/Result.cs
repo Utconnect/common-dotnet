@@ -1,8 +1,8 @@
-using Common.Models.Errors;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Identity;
+using Utconnect.Common.Models.Errors;
 
-namespace Common.Models;
+namespace Utconnect.Common.Models;
 
 public class Result<T>
 {

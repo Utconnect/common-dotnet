@@ -1,4 +1,4 @@
-namespace Common.Services.Abstractions;
+namespace Utconnect.Common.Services.Abstractions;
 
 public interface IDateTime
 {

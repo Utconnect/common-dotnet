@@ -1,4 +1,4 @@
-namespace Common.Identity.Models;
+namespace Utconnect.Common.Identity.Models;
 
 public interface IUser
 {
