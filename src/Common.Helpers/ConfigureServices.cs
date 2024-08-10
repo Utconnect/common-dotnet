@@ -1,5 +1,6 @@
 ﻿using Diacritics;
 using Microsoft.Extensions.DependencyInjection;
+using Utconnect.Common.Helpers.Abstractions;
 using Utconnect.Common.Helpers.Implementations;
 using Utconnect.Common.Helpers.Models;
 
@@ -17,6 +18,6 @@ public static class ConfigureServices
     public static void AddHelpers(this IServiceCollection services)
     {
         services.AddTransient<IDiacriticsMapper, CommonDiacriticsMapper>();
-        services.AddTransient<StringHelper>();
+        services.AddTransient<IStringHelper, StringHelper>();
     }
 }
