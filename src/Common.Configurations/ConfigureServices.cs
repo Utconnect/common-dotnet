@@ -7,7 +7,7 @@ public static class ConfigureServices
 {
     public static void AddConfiguration<TOptions>(this IServiceCollection services,
         IConfiguration configuration,
-        string? sectionName)
+        string? sectionName = null)
         where TOptions : class
     {
         if (string.IsNullOrEmpty(sectionName))
