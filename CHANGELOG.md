@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.1](https://github.com/Utconnect/common-dotnet/compare/v1.1.0...v1.1.1) (2024-08-10)
+
+
+### Bug Fixes
+
+* namespaces should be prefixed by `Utconnect` ([27dfe16](https://github.com/Utconnect/common-dotnet/commit/27dfe16c05d4d8dc1f18e7e555e055143ddc40f7))
+
 ## 1.1.0 (2024-08-10)
 
 
