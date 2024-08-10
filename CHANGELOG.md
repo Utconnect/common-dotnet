@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.2](https://github.com/Utconnect/common-dotnet/compare/v1.1.1...v1.1.2) (2024-08-10)
+
+
+### Improvements
+
+* add summary for methods ([4ffbe4b](https://github.com/Utconnect/common-dotnet/commit/4ffbe4b309840ecd1e2d7c95b4b87c708b4d4b72))
+
 ## [1.1.1](https://github.com/Utconnect/common-dotnet/compare/v1.1.0...v1.1.1) (2024-08-10)
 
 
