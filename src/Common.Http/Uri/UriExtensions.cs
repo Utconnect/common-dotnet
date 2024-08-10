@@ -2,7 +2,9 @@
 using System.Web;
 
 namespace Utconnect.Common.Http.Uri;
-
+/// <summary>
+/// Provides extension methods for <see cref="System.Uri"/> objects.
+/// </summary>
 public static class UriExtensions
 {
     /// <summary>

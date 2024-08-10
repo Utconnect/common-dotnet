@@ -8,8 +8,29 @@ using Utconnect.Common.Models.Errors;
 
 namespace Utconnect.Common.Exceptions.Filters;
 
-public class HttpResponseExceptionFilter(IHostEnvironment hostEnvironment) : IExceptionFilter
+/// <summary>
+/// A filter that handles exceptions thrown during the execution of an HTTP request and converts them into an appropriate HTTP response.
+/// </summary>
+/// <remarks>
+/// This filter converts various exceptions into an <see cref="HttpException"/> and formats the response accordingly.
+/// </remarks>
+public class HttpResponseExceptionFilter : IExceptionFilter
 {
+    private readonly IHostEnvironment _hostEnvironment;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="HttpResponseExceptionFilter"/> class.
+    /// </summary>
+    /// <param name="hostEnvironment">The current hosting environment. Used to determine if detailed error messages should be shown.</param>
+    public HttpResponseExceptionFilter(IHostEnvironment hostEnvironment)
+    {
+        _hostEnvironment = hostEnvironment;
+    }
+
+    /// <summary>
+    /// Called when an exception occurs during the execution of an action.
+    /// </summary>
+    /// <param name="context">The <see cref="ExceptionContext"/> that contains information about the exception and the context in which it occurred.</param>
     public void OnException(ExceptionContext context)
     {
         Exception exception = context.Exception;
@@ -26,7 +47,7 @@ public class HttpResponseExceptionFilter(IHostEnvironment hostEnvironment) : IEx
             default:
             {
                 List<Error> errorResponse = [new InternalServerError(exception.Message)];
-                string message = hostEnvironment.IsEnvironment(Environments.Development)
+                string message = _hostEnvironment.IsEnvironment(Environments.Development)
                     ? exception.Message
                     : "Server error";
                 exceptionToHandle =
