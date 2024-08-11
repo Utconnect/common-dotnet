@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.3](https://github.com/Utconnect/common-dotnet/compare/v1.1.2...v1.1.3) (2024-08-11)
+
+
+### Bug Fixes
+
+* **helpers:** interface `IStringHelper` should be injected ([52d0ab6](https://github.com/Utconnect/common-dotnet/commit/52d0ab611982b2343c59fd821f027ec2ebfa437a))
+
+
+### CI/CD
+
+* make dependabot to check `nuget` packages ([a2061ca](https://github.com/Utconnect/common-dotnet/commit/a2061caecc059ef630df11e1e0cb3cce9f390d67))
+
 ## [1.1.2](https://github.com/Utconnect/common-dotnet/compare/v1.1.1...v1.1.2) (2024-08-10)
 
 
