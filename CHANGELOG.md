@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Utconnect/common-dotnet/compare/v1.1.3...v1.2.0) (2024-08-21)
+
+
+### Features
+
+* `idName` model ([0d2b855](https://github.com/Utconnect/common-dotnet/commit/0d2b8552d9e2bbe68f145d08d711231bbf57c77a))
+
+
+### CI/CD
+
+* dependabot encounters an error performing the update ([eee52e0](https://github.com/Utconnect/common-dotnet/commit/eee52e01c4366b07ddc85d4e18f4010e97ea68c2))
+
 ## [1.1.3](https://github.com/Utconnect/common-dotnet/compare/v1.1.2...v1.1.3) (2024-08-11)
 
 
