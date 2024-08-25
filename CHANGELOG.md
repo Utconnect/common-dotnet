@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Utconnect/common-dotnet/compare/v1.2.0...v1.3.0) (2024-08-25)
+
+
+### Features
+
+* add GitHub source link ([8c82de8](https://github.com/Utconnect/common-dotnet/commit/8c82de80aa7b71694bf4b9db637195d8bdf4c14a))
+* **exception:** inject `HttpResponseExceptionFilter` via method ([196afa3](https://github.com/Utconnect/common-dotnet/commit/196afa3e10de83f0678afecc5ee693c68c79f878))
+* **infrastructure/db:** inject `AuditableEntitySaveChangesInterceptor` via method ([9f887dc](https://github.com/Utconnect/common-dotnet/commit/9f887dcb6b361f67223bd9025ef673c3c3922fd8))
+
 ## [1.2.0](https://github.com/Utconnect/common-dotnet/compare/v1.1.3...v1.2.0) (2024-08-21)
 
 
