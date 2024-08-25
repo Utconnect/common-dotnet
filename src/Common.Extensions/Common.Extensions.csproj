@@ -10,6 +10,15 @@
         <Company>Utconnect</Company>
         <RepositoryUrl>https://github.com/utconnect/common-dotnet</RepositoryUrl>
         <RootNamespace>Utconnect.Common.Extensions</RootNamespace>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
 
 </Project>
