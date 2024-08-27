@@ -1,19 +1,20 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Utconnect.Common.Exceptions.Filters;
 
-namespace Utconnect.Common.Exceptions;
-
-/// <summary>
-/// Provides extension methods for configuring common services.
-/// </summary>
-public static class ConfigureServices
+namespace Utconnect.Common.Exceptions
 {
     /// <summary>
-    /// Registers common services with the <see cref="IServiceCollection"/>.
+    /// Provides extension methods for configuring common services.
     /// </summary>
-    /// <param name="services">The <see cref="IServiceCollection"/> to which the services will be added.</param>
-    public static void AddExceptionFilter(this IServiceCollection services)
+    public static class ConfigureServices
     {
-        services.AddScoped<HttpResponseExceptionFilter>();
+        /// <summary>
+        /// Registers common services with the <see cref="IServiceCollection"/>.
+        /// </summary>
+        /// <param name="services">The <see cref="IServiceCollection"/> to which the services will be added.</param>
+        public static void AddExceptionFilter(this IServiceCollection services)
+        {
+            services.AddScoped<HttpResponseExceptionFilter>();
+        }
     }
 }

@@ -1,9 +1,12 @@
-﻿namespace Utconnect.Common.Models;
-
-public class IdNameModel<TId, TName>
+﻿namespace Utconnect.Common.Models
 {
-    public required TId Id { get; set; }
-    public required TName Name { get; set; }
-}
+    public class IdNameModel<TId, TName>
+    {
+        public TId Id { get; set; } = default!;
+        public TName Name { get; set; } = default!;
+    }
 
-public class IdNameModel : IdNameModel<string, string>;
+    public class IdNameModel : IdNameModel<string, string>
+    {
+    }
+}

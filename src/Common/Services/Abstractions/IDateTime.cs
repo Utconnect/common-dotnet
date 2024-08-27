@@ -1,12 +1,15 @@
-namespace Utconnect.Common.Services.Abstractions;
+using System;
 
-/// <summary>
-/// Provides access to the current date and time.
-/// </summary>
-public interface IDateTime
+namespace Utconnect.Common.Services.Abstractions
 {
     /// <summary>
-    /// Gets the current date and time.
+    /// Provides access to the current date and time.
     /// </summary>
-    DateTime Now { get; }
+    public interface IDateTime
+    {
+        /// <summary>
+        /// Gets the current date and time.
+        /// </summary>
+        DateTime Now { get; }
+    }
 }

@@ -1,12 +1,13 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Utconnect.Common.Infrastructure.Db.Interceptors;
 
-namespace Utconnect.Common.Infrastructure.Db;
-
-public static class ConfigureServices
+namespace Utconnect.Common.Infrastructure.Db
 {
-    public static void AddAuditableEntityInterceptor(this IServiceCollection services)
+    public static class ConfigureServices
     {
-        services.AddScoped<AuditableEntitySaveChangesInterceptor>();
+        public static void AddAuditableEntityInterceptor(this IServiceCollection services)
+        {
+            services.AddScoped<AuditableEntitySaveChangesInterceptor>();
+        }
     }
 }

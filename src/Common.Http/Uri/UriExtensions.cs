@@ -1,26 +1,29 @@
-﻿using System.Collections.Specialized;
+﻿using System;
+using System.Collections.Specialized;
 using System.Web;
 
-namespace Utconnect.Common.Http.Uri;
-/// <summary>
-/// Provides extension methods for <see cref="System.Uri"/> objects.
-/// </summary>
-public static class UriExtensions
+namespace Utconnect.Common.Http.Uri
 {
     /// <summary>
-    /// Adds the specified parameter to the Query String.
+    /// Provides extension methods for <see cref="System.Uri"/> objects.
     /// </summary>
-    /// <param name="url"></param>
-    /// <param name="paramName">Name of the parameter to add.</param>
-    /// <param name="paramValue">Value for the parameter to add.</param>
-    /// <returns>Url with added parameter.</returns>
-    public static System.Uri AddParameter(this System.Uri url, string paramName, string paramValue)
+    public static class UriExtensions
     {
-        UriBuilder uriBuilder = new(url);
-        NameValueCollection query = HttpUtility.ParseQueryString(uriBuilder.Query);
-        query[paramName] = paramValue;
-        uriBuilder.Query = query.ToString();
+        /// <summary>
+        /// Adds the specified parameter to the Query String.
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="paramName">Name of the parameter to add.</param>
+        /// <param name="paramValue">Value for the parameter to add.</param>
+        /// <returns>Url with added parameter.</returns>
+        public static System.Uri AddParameter(this System.Uri url, string paramName, string paramValue)
+        {
+            UriBuilder uriBuilder = new UriBuilder(url);
+            NameValueCollection query = HttpUtility.ParseQueryString(uriBuilder.Query);
+            query[paramName] = paramValue;
+            uriBuilder.Query = query.ToString();
 
-        return uriBuilder.Uri;
+            return uriBuilder.Uri;
+        }
     }
 }

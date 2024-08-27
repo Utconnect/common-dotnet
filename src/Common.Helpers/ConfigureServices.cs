@@ -4,20 +4,21 @@ using Utconnect.Common.Helpers.Abstractions;
 using Utconnect.Common.Helpers.Implementations;
 using Utconnect.Common.Helpers.Models;
 
-namespace Utconnect.Common.Helpers;
-
-/// <summary>
-/// Provides extension methods for configuring services in the dependency injection container.
-/// </summary>
-public static class ConfigureServices
+namespace Utconnect.Common.Helpers
 {
     /// <summary>
-    /// Registers helper services with the <see cref="IServiceCollection"/>.
+    /// Provides extension methods for configuring services in the dependency injection container.
     /// </summary>
-    /// <param name="services">The <see cref="IServiceCollection"/> to which the services will be added.</param>
-    public static void AddHelpers(this IServiceCollection services)
+    public static class ConfigureServices
     {
-        services.AddTransient<IDiacriticsMapper, CommonDiacriticsMapper>();
-        services.AddTransient<IStringHelper, StringHelper>();
+        /// <summary>
+        /// Registers helper services with the <see cref="IServiceCollection"/>.
+        /// </summary>
+        /// <param name="services">The <see cref="IServiceCollection"/> to which the services will be added.</param>
+        public static void AddHelpers(this IServiceCollection services)
+        {
+            services.AddTransient<IDiacriticsMapper, CommonDiacriticsMapper>();
+            services.AddTransient<IStringHelper, StringHelper>();
+        }
     }
 }

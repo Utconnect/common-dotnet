@@ -2,19 +2,20 @@
 using Utconnect.Common.Services.Abstractions;
 using Utconnect.Common.Services.Implementations;
 
-namespace Utconnect.Common;
-
-/// <summary>
-/// Provides extension methods for configuring common services.
-/// </summary>
-public static class ConfigureServices
+namespace Utconnect.Common
 {
     /// <summary>
-    /// Registers common services with the <see cref="IServiceCollection"/>.
+    /// Provides extension methods for configuring common services.
     /// </summary>
-    /// <param name="services">The <see cref="IServiceCollection"/> to which the services will be added.</param>
-    public static void AddCommon(this IServiceCollection services)
+    public static class ConfigureServices
     {
-        services.AddTransient<IDateTime, DateTimeService>();
+        /// <summary>
+        /// Registers common services with the <see cref="IServiceCollection"/>.
+        /// </summary>
+        /// <param name="services">The <see cref="IServiceCollection"/> to which the services will be added.</param>
+        public static void AddCommon(this IServiceCollection services)
+        {
+            services.AddTransient<IDateTime, DateTimeService>();
+        }
     }
 }

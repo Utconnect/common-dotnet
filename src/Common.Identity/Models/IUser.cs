@@ -1,12 +1,16 @@
-namespace Utconnect.Common.Identity.Models;
+using System;
+using System.Collections.Generic;
 
-public interface IUser
+namespace Utconnect.Common.Identity.Models
 {
-    Guid Id { get; set; }
-    string? UserName { get; set; }
-    string? Email { get; set; }
-    string Name { get; set; }
-    bool IsAuthenticated { get; set; }
-    List<int> Permissions { get; }
-    List<int> Roles { get; }
+    public interface IUser
+    {
+        Guid Id { get; set; }
+        string? UserName { get; set; }
+        string? Email { get; set; }
+        string Name { get; set; }
+        bool IsAuthenticated { get; set; }
+        List<int> Permissions { get; }
+        List<int> Roles { get; }
+    }
 }

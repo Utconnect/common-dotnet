@@ -1,8 +1,9 @@
 using Utconnect.Common.Identity.Models;
 
-namespace Utconnect.Common.Identity.Services.Abstractions;
-
-public interface IIdentityService
+namespace Utconnect.Common.Identity.Services.Abstractions
 {
-    IUser? GetCurrent();
+    public interface IIdentityService
+    {
+        IUser? GetCurrent();
+    }
 }
