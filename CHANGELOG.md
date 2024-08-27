@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.4.0](https://github.com/Utconnect/common-dotnet/compare/v1.3.0...v1.4.0) (2024-08-27)
+
+
+### Features
+
+* support `netstandard2.1`, `net5.0`, `net6.0`, `net7.0`, `net8.0` ([db339ec](https://github.com/Utconnect/common-dotnet/commit/db339ecf92e5f30e7ed0952e1b0c160037a3a777))
+
 ## [1.3.0](https://github.com/Utconnect/common-dotnet/compare/v1.2.0...v1.3.0) (2024-08-25)
 
 
