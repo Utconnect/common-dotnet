@@ -10,7 +10,7 @@
         <RootNamespace>Utconnect.Common.MediatR</RootNamespace>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <Nullable>enable</Nullable>
+        <DebugType>embedded</DebugType>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <EnablePackageValidation>true</EnablePackageValidation>
         <Nullable>enable</Nullable>
