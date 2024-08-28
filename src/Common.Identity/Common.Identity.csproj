@@ -10,6 +10,8 @@
         <RootNamespace>Utconnect.Common.Identity</RootNamespace>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <EnablePackageValidation>true</EnablePackageValidation>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
@@ -33,6 +35,10 @@
         <ProjectReference Include="..\Common.Exceptions\Common.Exceptions.csproj"/>
         <ProjectReference Include="..\Common.Extensions\Common.Extensions.csproj"/>
         <ProjectReference Include="..\Common.Logging\Common.Logging.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>

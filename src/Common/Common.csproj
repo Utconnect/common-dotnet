@@ -13,6 +13,8 @@
         <DebugType>portable</DebugType>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <EnablePackageValidation>true</EnablePackageValidation>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
@@ -29,7 +31,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="Services\"/>
+        <None Include="README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>
