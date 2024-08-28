@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.4.1](https://github.com/Utconnect/common-dotnet/compare/v1.4.0...v1.4.1) (2024-08-28)
+
+
+### CI/CD
+
+* add package readme ([66f57bf](https://github.com/Utconnect/common-dotnet/commit/66f57bfc69155138727acf4e5847ddc3e5d70335))
+* use debug type `embedded` ([fe36ef9](https://github.com/Utconnect/common-dotnet/commit/fe36ef9ef5cf5e83317d1f5f807388aa0bc85262))
+
 ## [1.4.0](https://github.com/Utconnect/common-dotnet/compare/v1.3.0...v1.4.0) (2024-08-27)
 
 
