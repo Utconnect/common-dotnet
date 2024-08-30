@@ -106,6 +106,16 @@ namespace Utconnect.Common.Models
         }
 
         /// <summary>
+        /// Creates a successful result without a specific data payload.
+        /// </summary>
+        /// <param name="data">The data payload.</param>
+        /// <returns>A <see cref="Result{T}"/> indicating success with the provided data.</returns>
+        public static Result<T> Succeed<T>(T data)
+        {
+            return Result<T>.Succeed(data);
+        }
+
+        /// <summary>
         /// Creates a failed result with the specified error.
         /// </summary>
         /// <param name="error">The error associated with the failure.</param>
