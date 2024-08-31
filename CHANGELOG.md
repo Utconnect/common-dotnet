@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.5.0](https://github.com/Utconnect/common-dotnet/compare/v1.4.1...v1.5.0) (2024-08-31)
+
+
+### Features
+
+* **common:** add overload to return success result without generic type ([f29d61a](https://github.com/Utconnect/common-dotnet/commit/f29d61a139d20206fbccc1e87440be14d2d1220c))
+* **infrastructure/db:** unit of work ([092fa48](https://github.com/Utconnect/common-dotnet/commit/092fa48a3417a19ad1735bb4da9a8e41c0fa9e4a))
+
 ## [1.4.1](https://github.com/Utconnect/common-dotnet/compare/v1.4.0...v1.4.1) (2024-08-28)
 
 
